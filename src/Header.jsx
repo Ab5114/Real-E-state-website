@@ -1,0 +1,58 @@
+//Header.jsx
+import headerImg from "./assets/header_img.png"; // Import the image
+import NavBar from "./NavBar";
+import { motion } from "framer-motion";
+export default function Header() {
+  return (
+    <>
+      <div
+        id="Header"
+        style={{
+          backgroundImage: `url(${headerImg})`,
+          width: "100%",
+          height: "100vh",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "flex",
+          justifyContent: " center",
+          alignItems: "center",
+        }}
+      >
+        {/* Content of the header */}
+
+        <NavBar />
+ 
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          style={{ textAlign: "center" }}
+        >
+          <h1
+            style={{
+              fontSize: "82px",
+              maxWidth: "48rem",
+              color: "white",
+              textAlign: "center",
+            }}
+          >
+            Explore homes that fit your dreams
+          </h1>
+          <div style={{ border: "1px solid green", marginTop: "64px" }}>
+            <a href="#Project" className="project-btn">
+              Projects
+            </a>
+            <a
+              href="#Contact"
+              className="contact-btn"
+              style={{ marginLeft: "24px", display: "inline-block" }}
+            >
+              Contact-Us
+            </a>
+          </div>
+        </motion.div>
+      </div>
+    </>
+  );
+}
