@@ -21,7 +21,7 @@ export default function Header() {
         {/* Content of the header */}
 
         <NavBar />
- 
+
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 1.5 }}
@@ -31,7 +31,8 @@ export default function Header() {
         >
           <h1
             style={{
-              fontSize: "82px",
+              fontSize: "clamp(2rem, 8vw, 82px)",
+              fontWeight:600,
               maxWidth: "48rem",
               color: "white",
               textAlign: "center",
@@ -39,7 +40,7 @@ export default function Header() {
           >
             Explore homes that fit your dreams
           </h1>
-          <div style={{ border: "1px solid green", marginTop: "64px" }}>
+          <div style={{ marginTop: "40px" }}>
             <a href="#Project" className="project-btn">
               Projects
             </a>
