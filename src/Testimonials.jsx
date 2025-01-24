@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
-   <div style={{overflow:"hidden"}}>
+    <div style={{ overflow: "hidden" }}>
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 1.5 }}
@@ -19,7 +19,7 @@ const Testimonials = () => {
         className="testimonial"
         id="Testimonials"
       >
-        <h1 style={{ fontWeight: "700" }}>
+        <h1 style={{ fontWeight: "700", textAlign: "center" }}>
           Customer{" "}
           <span
             style={{
@@ -54,7 +54,11 @@ const Testimonials = () => {
             <img src={profileImg1} alt="" />
             <h3>Donald Jackman</h3>
             <p
-              style={{ color: "#6b7280", fontSize: "14px", marginBottom: "16px" }}
+              style={{
+                color: "#6b7280",
+                fontSize: "14px",
+                marginBottom: "16px",
+              }}
             >
               Marketing Manager
             </p>
@@ -65,18 +69,22 @@ const Testimonials = () => {
               <img src={svgIcon} alt="" />
               <img src={svgIcon} alt="" />
             </div>
-  
+
             <p style={{ color: "#4b5563", lineHeight: "1.5" }}>
-              From the very first meeting, they understood my vision and helped me
-              find the perfect property. Their attention to detail and commitment
-              to client satisfaction is unmatched
+              From the very first meeting, they understood my vision and helped
+              me find the perfect property. Their attention to detail and
+              commitment to client satisfaction is unmatched
             </p>
           </div>
           <div className="t-card shadow-lg">
             <img src={profileImg2} alt="" />
             <h3>Richard Nelson</h3>
             <p
-              style={{ color: "#6b7280", fontSize: "14px", marginBottom: "16px" }}
+              style={{
+                color: "#6b7280",
+                fontSize: "14px",
+                marginBottom: "16px",
+              }}
             >
               UI/UX Designer
             </p>
@@ -88,16 +96,20 @@ const Testimonials = () => {
               <img src={svgIcon} alt="" />
             </div>
             <p style={{ color: "#4b5563", lineHeight: "1.5" }}>
-              From the very first meeting, they understood my vision and helped me
-              find the perfect property. Their attention to detail and commitment
-              to client satisfaction is unmatched.
+              From the very first meeting, they understood my vision and helped
+              me find the perfect property. Their attention to detail and
+              commitment to client satisfaction is unmatched.
             </p>
           </div>
           <div className="t-card shadow-lg">
             <img src={profileImg3} alt="" />
             <h3>James Washington</h3>
             <p
-              style={{ color: "#6b7280", fontSize: "14px", marginBottom: "16px" }}
+              style={{
+                color: "#6b7280",
+                fontSize: "14px",
+                marginBottom: "16px",
+              }}
             >
               Co-Founder
             </p>
@@ -109,14 +121,14 @@ const Testimonials = () => {
               <img src={svgIcon} alt="" />
             </div>
             <p style={{ color: "#4b5563", lineHeight: "1.5" }}>
-              From the very first meeting, they understood my vision and helped me
-              find the perfect property. Their attention to detail and commitment
-              to client satisfaction is unmatched.
+              From the very first meeting, they understood my vision and helped
+              me find the perfect property. Their attention to detail and
+              commitment to client satisfaction is unmatched.
             </p>
           </div>
         </div>
       </motion.div>
-   </div >
+    </div>
   );
 }
 

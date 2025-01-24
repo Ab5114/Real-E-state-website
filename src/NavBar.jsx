@@ -3,6 +3,9 @@ import { useState } from 'react';
 
 const NavBar = () => {
     const [showMobileMenu,setMenu]=useState(false);
+     const handleLinkClick = () => {
+       setMenu(!showMobileMenu); // Close the mobile menu
+     };
   return (
     <div
       id="Navbar"
@@ -56,10 +59,26 @@ const NavBar = () => {
               />
             </div>
             <ul>
-              <li>Home </li>
-              <li>About </li>
-              <li>Project</li>
-              <li>Testimonials</li>
+              <li>
+                <a href="#Home" onClick={handleLinkClick}>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#About" onClick={handleLinkClick}>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#Project" onClick={handleLinkClick}>
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#Contact" onClick={handleLinkClick}>
+                  Contact us
+                </a>
+              </li>
             </ul>
           </div>
         )}

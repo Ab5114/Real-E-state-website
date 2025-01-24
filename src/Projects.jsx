@@ -31,7 +31,7 @@ const Projects = () => {
       className="project"
       id="Project"
     >
-      <h1 style={{ fontWeight: "700" }}>
+      <h1 style={{ fontWeight: "700", textAlign: "center" }}>
         Projects{" "}
         <span
           style={{
@@ -100,8 +100,10 @@ const Projects = () => {
           className="cards"
           ref={cardsRef}
           style={{
-            transform: `translateX(-${currIndex * 20}%)`,
-            transition: "transform 0.5s ease-in-out",
+            transform: `translateX(-${
+              currIndex * (window.innerWidth <= 640 ? 100 : 20)
+            }%)`,
+            transition: "transform 0.8s ease-in-out",
           }}
         >
           <img
