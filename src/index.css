@@ -9,6 +9,10 @@
 html {
   scroll-behavior: smooth;
 }
+/* This will prevent all styles from applying to body.signup and its children */
+body.signup * {
+    all: unset;
+}
 
 body {
   margin: 0;

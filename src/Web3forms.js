@@ -1,11 +1,12 @@
 import { toast } from "react-toastify";
-
+ 
 const onSubmit = async (event,message,setResult,sendingmessage) => {
   event.preventDefault();
+   if(setResult)
   setResult(sendingmessage);
   const formData = new FormData(event.target);
- console.log(process.env.REACT_APP_API_KEY);
-  formData.append("access_key", process.env.REACT_APP_API_KEY);
+  formData.delete("password");
+   formData.append("access_key", process.env.REACT_APP_API_KEY);
 
   const response = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
@@ -16,14 +17,13 @@ const onSubmit = async (event,message,setResult,sendingmessage) => {
 
   if (data.success) {
     
-
-      toast.success(message);
+       toast.success(message);
     event.target.reset();
-  } else {
+   } else {
     console.log("Error", data);
           toast.error(data.message);
     
   }
-  setResult("");
+    if (setResult) setResult("");
 };
 export default onSubmit;
