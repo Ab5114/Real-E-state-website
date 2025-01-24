@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from "react-router-dom";
+
 
 const NavBar = () => {
     const [showMobileMenu,setMenu]=useState(false);
@@ -32,7 +34,10 @@ const NavBar = () => {
             <a href="#Contact">Contact us</a>
           </li>
         </ul>
-        <button className="sign-up-button"> Sign Up</button>
+        <Link to="/signup">
+          <button className="sign-up-button" onClick={()=>{console.log("sign up clicked");
+           }} > Sign Up</button>
+        </Link>
 
         <div
           className="hamburger-menu"
