@@ -19,7 +19,7 @@ const Contact = () => {
         className="contact"
         id="Contact"
       >
-        <h1 style={{ fontWeight: "700" }}>
+        <h1 style={{ fontWeight: "700",textAlign:"center" }}>
           Contact{" "}
           <span
             style={{
@@ -45,7 +45,7 @@ const Contact = () => {
         <form
           className="contact-content"
           onSubmit={(event) => {
-            onSubmit(event, "Form submitted successfully",setResult);
+            onSubmit(event, "Form submitted successfully",setResult,"Sending...");
           }}
         >
           <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>

@@ -39,7 +39,7 @@ const Footer = () => {
           <p>
             The latest news, articles, and resources, sent to your inbox weekly.
           </p>
-          <form className="subscribe-form" onSubmit={(event)=>{onSubmit(event,"You are Subscribed successfully",setResult,"Subscribing")}}>
+          <form className="subscribe-form" onSubmit={(event)=>{onSubmit(event,"You are Subscribed successfully",setResult,"Subscribing...")}}>
             <input
               type="email"
               placeholder="Enter your email"
@@ -52,7 +52,7 @@ const Footer = () => {
       <hr style={{ marginBlock:"40px"}} />
       <div className="copyright">
         {" "}
-        Copyright 2024 © Ab5114. All Right Reserved.
+        Copyright 2024 © Ab5114. <span>All Right Reserved</span>.
       </div>
     </div>
   );
