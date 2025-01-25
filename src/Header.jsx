@@ -20,19 +20,19 @@ export default function Header() {
       >
         {/* Content of the header */}
 
-        <NavBar />
+        <NavBar/>
 
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 1.5 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          style={{ textAlign: "center",padding:"16px" }}
+          style={{ textAlign: "center", padding: "16px" }}
         >
           <h1
             style={{
               fontSize: "clamp(2rem, 8vw, 82px)",
-              fontWeight:600,
+              fontWeight: 600,
               maxWidth: "48rem",
               color: "white",
               textAlign: "center",
