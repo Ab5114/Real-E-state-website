@@ -1,8 +1,5 @@
 import "./App.css";
-import {
-   Route,
-  Routes,
- } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Header from "./Header.jsx";
 import About from "./About";
@@ -13,23 +10,21 @@ import Footer from "./Footer.jsx";
 import { ToastContainer } from "react-toastify";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import Signup from "./Signup.jsx";
- 
+import SearchProperty from "./search-components/SearchProperty.jsx";
+
 function App() {
- 
- 
   return (
     <>
       <ToastContainer />
       <SpeedInsights />
 
- 
       <Routes>
         <Route
           path="/"
           element={
             <>
               <Header />
-              <About/>
+              <About />
               <Projects />
               <Testimonials />
               <Contact />
@@ -37,13 +32,9 @@ function App() {
             </>
           }
         />
-         <Route
-          path="/signup"
-          element={<Signup/>}
-        />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/search-property" element={<SearchProperty />} />
       </Routes>
-
-      
     </>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 const Projects = () => {
@@ -147,6 +148,36 @@ const Projects = () => {
             alt=""
           />
         </div>
+      </div>
+      <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <p
+          style={{
+            fontSize: "18px",
+            color: "#555",
+            marginBottom: "30px",
+            fontWeight: "500",
+          }}
+        >
+          Ready to find your dream property? Click the button below to search
+          for the best real estate options tailored to your needs. Whether
+          you're looking to buy or rent, we have a variety of listings for you
+          to explore!
+        </p>
+        <Link to="/search-property">
+          <button
+            style={{
+              backgroundColor: "#3b82f6",
+              padding: "12px 20px",
+              color: "white",
+              fontSize: "16px",
+              borderRadius: "4px",
+              border: "none",
+              cursor: "pointer",
+            }}
+          >
+            Search Real Estate
+          </button>
+        </Link>
       </div>
     </motion.div>
   );

@@ -13,7 +13,7 @@ export default function Header() {
           height: "100vh",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          display: "flex",
+          display: "flex",  
           justifyContent: " center",
           alignItems: "center",
         }}
