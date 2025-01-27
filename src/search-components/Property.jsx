@@ -76,8 +76,7 @@ const Property = ({ property }) => {
             width: 32%;
             overflow: hidden;
             text-align: left;
-            padding: 10px;
-            
+            padding: 15px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-sizing:border-box;
            }
@@ -93,8 +92,15 @@ const Property = ({ property }) => {
 
           @media (max-width:600px) {
             .property-card{
-              width:90%;
+                width:95%;
             }
+             
+          }
+              @media (max-width:480px) {
+            .property-card{
+                width:100%;
+            }
+             
           }
 
           .property-card:hover {

@@ -51,7 +51,6 @@ const TypewriterTextarea = ({ searchInput, setSearchInput }) => {
       <textarea
         placeholder={placeholderText}
         rows="6"
-        cols="50"
         className="search-textarea"
         value={searchInput}
         onChange={handleInputChange}
@@ -59,15 +58,34 @@ const TypewriterTextarea = ({ searchInput, setSearchInput }) => {
 
       <style>
         {`.search-textarea {
-            margin: 10px auto;
-            display:block;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            width: 50%;
-            font-size: 16px;
-         resize: none;
-          }
+    margin: 10px auto;
+    display: block;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: none;
+    width: 50%;  
+     box-sizing: border-box;  
+}
+     @media (max-width:1200px)
+     {
+    .search-textarea{ width:60%;}
+     }
+
+@media (max-width: 984px) {
+    .search-textarea {
+        width: 90%;  
+    }
+}
+
+@media (max-width: 600px) {
+    .search-textarea {
+    width:100%;
+        font-size: 14px;  
+        padding: 10px;  
+    }
+}
 
 
           .search-textarea:focus {

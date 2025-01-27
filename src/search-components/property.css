@@ -41,17 +41,22 @@ code {
     padding-inline: 24px; 
     justify-content: center;
   }
-
-   
 }
-
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .properties-container {
-    padding-inline: 10px;  
+    padding-inline: 12px; 
     justify-content: center;
   }
-
 }
+@media (max-width: 480px) {
+  .properties-container {
+    padding-inline: 10px; 
+    justify-content: center;
+  }
+}
+ 
+
+
 
 
  

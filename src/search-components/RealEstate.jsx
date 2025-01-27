@@ -134,8 +134,7 @@ const RealEstate = () => {
         {`
           .real-estate-container {
             background-color: #f5f5f5;
-            padding: 20px;
-            border-radius: 8px;
+             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             min-height:100vh;
           }
@@ -161,11 +160,15 @@ const RealEstate = () => {
             cursor: pointer;
             display:block;
             margin-inline :auto;
-                        margin-top: 15px;
-                        margin-bottom:10px;
+             margin-top: 15px;
+             margin-bottom:10px;
 
                          
 
+          }
+
+          .description{
+          padding-inline:20px;
           }
 
           button:hover {
