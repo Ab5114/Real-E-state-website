@@ -145,8 +145,7 @@ const Property = ({ property }) => {
             margin-top: 10px;
             padding: 5px;
             border-left: 4px solid #00aaff;
-            font-family: 'Open Sans', sans-serif;
-          }
+            }
 
           .price {
             font-size: 20px;
