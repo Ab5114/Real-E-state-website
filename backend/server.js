@@ -51,10 +51,7 @@ app.post("/api/Properties", async (req, res) => {
     );
 
     const propertiesResponse = await fetchProperties(parsedProperties);
-    // console.log(
-    //   "properties response in api/Properties is :",
-    //   propertiesResponse
-    // );
+    
     return res.status(200).json({ propertiesResponse, isDefault });
   } catch (error) {
     console.error("Error in /api/Properties:", error.message);
@@ -64,6 +61,6 @@ app.post("/api/Properties", async (req, res) => {
   }
 });
 
-app.listen(5009, () => {
+app.listen(5022, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });

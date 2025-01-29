@@ -57,6 +57,8 @@ const RealEstate = () => {
 
   const [properties, setProperties] = useState(updatedProperties);
 
+  const apiUrl = "https://real-estate-services-production.up.railway.app";
+
   const handleSubmit = async () => {
     if (!navigator.onLine) {
       setNetworkError(true);
@@ -73,7 +75,7 @@ const RealEstate = () => {
       setProperties([]);
       setError("");
       const response = await axios.post(
-        "http://localhost:5009/api/properties",
+        "${apiUrl}/api/properties",
         {
           post: searchInput,
         }
@@ -84,7 +86,7 @@ const RealEstate = () => {
       setProperties(propertiesResponse);
     } catch (error) {
       console.error("Error:", error);
-      setError("There was an issue fetching the properties. Please try again."); // Set a user-friendly error message
+      setError("There was an issue fetching the properties. Please try again.");  
     } finally {
       setLoading(false);
     }
