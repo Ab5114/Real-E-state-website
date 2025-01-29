@@ -57,7 +57,7 @@ const RealEstate = () => {
 
   const [properties, setProperties] = useState(updatedProperties);
 
-  const apiUrl = "https://real-estate-services-production.up.railway.app";
+  const apiUrl = process.env.NODE_ENV=="development"?"http://localhost:5022": "https://real-estate-services-production.up.railway.app";
 
   const handleSubmit = async () => {
     if (!navigator.onLine) {
@@ -75,7 +75,7 @@ const RealEstate = () => {
       setProperties([]);
       setError("");
       const response = await axios.post(
-        "${apiUrl}/api/properties",
+        `${apiUrl}/api/properties`,
         {
           post: searchInput,
         }
