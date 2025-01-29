@@ -28,7 +28,7 @@ const Property = ({ property }) => {
           {city}, {state}
         </h3>
         <div className="location">
-          <div className="country">Country: {country}</div>{" "}
+          <div className="country">{country}</div>{" "}
         </div>
         <div className="address">
           <a
@@ -76,7 +76,7 @@ const Property = ({ property }) => {
             width: 32%;
             overflow: hidden;
             text-align: left;
-            padding: 15px;
+            padding: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-sizing:border-box;
            }
@@ -86,19 +86,22 @@ const Property = ({ property }) => {
 
           @media (max-width:1000px) {
             .property-card{
-              width:49%
+              width:49%;
+             padding:15px;
             }
           }
 
           @media (max-width:600px) {
             .property-card{
                 width:95%;
+                padding:15px;
             }
              
           }
               @media (max-width:480px) {
             .property-card{
                 width:100%;
+                padding-inline:20px;
             }
              
           }
@@ -125,20 +128,20 @@ const Property = ({ property }) => {
 
           .location {
             margin: 5px 0;
-            color: #555;
-            font-size: 14px;
+             
+            font-size: 18px;
             font-family: 'Poppins', sans-serif;
           }
 
           .location .country {
             font-weight: 600;
-            color: #777;
+            color: #333;
           }
 
           .address {
             font-size: 13px;
             font-style: italic;
-            color: #444;
+            color: #555;
             margin-top: 10px;
             padding: 5px;
             border-left: 4px solid #00aaff;
@@ -148,10 +151,15 @@ const Property = ({ property }) => {
           .price {
             font-size: 20px;
             font-weight: bold;
-            color: #00aaff;
+              color: #353535;
+
             margin-top: 10px;
             font-family: 'Open Sans', sans-serif;
           }
+ 
+ 
+
+
 
           .details {
             margin-top: 10px;
