@@ -23,7 +23,7 @@ const Property = ({ property }) => {
   return (
     <>
       <div className="property-card">
-        <img src={imgSrc} alt="" />
+        <img src={imgSrc} alt="Property Image"  />
         <h3>
           {city}, {state}
         </h3>

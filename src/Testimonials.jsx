@@ -51,7 +51,7 @@ const Testimonials = () => {
           }}
         >
           <div className="t-card shadow-lg">
-            <img src={profileImg1} alt="" />
+            <img src={profileImg1} alt="profileImg" />
             <h3>Donald Jackman</h3>
             <p
               style={{
@@ -63,11 +63,11 @@ const Testimonials = () => {
               Marketing Manager
             </p>
             <div className="rating">
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
+              <img src={svgIcon} alt="stars" />
+              <img src={svgIcon} alt="stars" />
+              <img src={svgIcon} alt="stars" />
+              <img src={svgIcon} alt="stars" />
+              <img src={svgIcon} alt="stars" />
             </div>
 
             <p style={{ color: "#4b5563", lineHeight: "1.5" }}>
@@ -77,7 +77,7 @@ const Testimonials = () => {
             </p>
           </div>
           <div className="t-card shadow-lg">
-            <img src={profileImg2} alt="" />
+            <img src={profileImg2} alt="profile Image" />
             <h3>Richard Nelson</h3>
             <p
               style={{
@@ -89,11 +89,11 @@ const Testimonials = () => {
               UI/UX Designer
             </p>
             <div className="rating">
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
+              <img src={svgIcon} alt="starsstars" />
+              <img src={svgIcon} alt="starsstars" />
+              <img src={svgIcon} alt="starsstars" />
+              <img src={svgIcon} alt="starsstars" />
+              <img src={svgIcon} alt="starsstars" />
             </div>
             <p style={{ color: "#4b5563", lineHeight: "1.5" }}>
               From the very first meeting, they understood my vision and helped
@@ -102,7 +102,7 @@ const Testimonials = () => {
             </p>
           </div>
           <div className="t-card shadow-lg">
-            <img src={profileImg3} alt="" />
+            <img src={profileImg3} alt="profile Image" />
             <h3>James Washington</h3>
             <p
               style={{
@@ -114,11 +114,11 @@ const Testimonials = () => {
               Co-Founder
             </p>
             <div className="rating">
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
-              <img src={svgIcon} alt="" />
+              <img src={svgIcon} alt="stars" />
+              <img src={svgIcon} alt="stars" />
+              <img src={svgIcon} alt="stars" />
+              <img src={svgIcon} alt="stars" />
+              <img src={svgIcon} alt="stars" />
             </div>
             <p style={{ color: "#4b5563", lineHeight: "1.5" }}>
               From the very first meeting, they understood my vision and helped

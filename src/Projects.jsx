@@ -77,6 +77,7 @@ const Projects = () => {
           <img
             src="data:image/svg+xml,%3csvg%20width='9'%20height='14'%20viewBox='0%200%209%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%201L1%207L8%2013'%20stroke='%232563EB'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
             alt=""
+            loading="lazy"
           />
         </button>
         <button
@@ -93,6 +94,7 @@ const Projects = () => {
           <img
             src="data:image/svg+xml,%3csvg%20width='9'%20height='14'%20viewBox='0%200%209%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%201L8%207L1%2013'%20stroke='%232563EB'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
             alt=""
+            loading="lazy"
           />
         </button>
       </div>
@@ -110,42 +112,52 @@ const Projects = () => {
           <img
             src="https://estatedev.in/assets/project_img_3-3sNYAKXT.jpg"
             alt=""
+            loading="lazy"
           />
           <img
             src="https://estatedev.in/assets/project_img_2-DnQUAazb.jpg"
             alt=""
+            loading="lazy"
           />
           <img
             src="https://estatedev.in/assets/project_img_3-3sNYAKXT.jpg"
             alt=""
+            loading="lazy"
           />
           <img
             src="https://estatedev.in/assets/project_img_4-C5CE8mdZ.jpg"
             alt=""
+            loading="lazy"
           />
           <img
             src="https://estatedev.in/assets/project_img_5-DXUdfqvc.jpg"
             alt=""
+            loading="lazy"
           />
           <img
             src="https://estatedev.in/assets/project_img_6-PJDGxfJF.jpg"
             alt=""
+            loading="lazy"
           />
           <img
             src="https://estatedev.in/assets/project_img_6-PJDGxfJF.jpg"
             alt=""
+            loading="lazy"
           />
           <img
             src="https://estatedev.in/assets/project_img_6-PJDGxfJF.jpg"
             alt=""
+            loading="lazy"
           />
           <img
             src="https://estatedev.in/assets/project_img_6-PJDGxfJF.jpg"
             alt=""
+            loading="lazy"
           />
           <img
             src="https://estatedev.in/assets/project_img_6-PJDGxfJF.jpg"
             alt=""
+            loading="lazy"
           />
         </div>
       </div>
