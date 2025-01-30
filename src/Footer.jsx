@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="estate" style={{ width: "33%" }}>
           <img
             src="https://estatedev.in/assets/logo_dark-BlEproOr.svg"
-            alt=""
+            alt="logo"
           />
           <p style={{ color: "#9ca3af" }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
