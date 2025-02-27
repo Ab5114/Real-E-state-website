@@ -95,7 +95,7 @@ const RealEstate = () => {
   return (
     <>
       <div className="real-estate-container">
-        <h1 className="heading">Search For The Properties</h1>
+        <h1 className="heading">Search For The Properties using AI</h1>
         <div className="description">
           <TypewriterTextarea
             searchInput={searchInput}
@@ -147,6 +147,7 @@ const RealEstate = () => {
             text-align: center;
             color: #333;
             margin-bottom: 20px;
+            margin-top:20px;
           }
        
           
