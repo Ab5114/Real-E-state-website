@@ -27,8 +27,8 @@ function App() {
             element={
               <>
                 <Header />
-                <About />
                 <Projects />
+                <About />
                 <Testimonials />
                 <Contact />
                 <Footer />
