@@ -170,10 +170,10 @@ const Projects = () => {
             fontWeight: "500",
           }}
         >
-          Ready to find your dream property? Click the button below to search
-          for the best real estate options tailored to your needs. Whether
-          you're looking to buy or rent, we have a variety of listings for you
-          to explore!
+          Looking for your ideal property? Click the button below to let our AI
+          find the best real estate options for you. Simply describe what you
+          need, and our intelligent system will fetch the most relevant
+          listings—whether you're buying or renting!
         </p>
         <Link to="/search-property">
           <button
