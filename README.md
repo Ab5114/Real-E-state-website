@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# AI Powered Real Estate Property Finder Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack MERN-based real estate search platform that enables users to find properties using natural language queries. Built with a focus on intuitive UI, dynamic search, and scalable architecture, this project simulates a smart property search assistant for real-world use.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+### 🔎 Smart Property Search
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Accepts natural language queries such as "3 BHK flat in Pune under 40L".
+* Parses and converts input to a structured filter object.
+* Fetches property listings based on parsed filters (location, BHK, budget).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🧠 AI/NLP Integration (Optional/Future-Ready)
 
-### `npm test`
+* Designed to integrate with OpenAI or other LLM APIs to extract filters from user queries.
+* Future-ready chatbot interface for guided property search experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🗺️ Advanced Filtering
 
-### `npm run build`
+* Filter by price, location, property type, BHK, amenities.
+* Optionally integrates with map services (Google Maps API) for location visualization.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🧑‍🤝‍🧑 Trusted Social Reviews (Planned Feature)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* View reviews/comments on listings only from known connections (friends, college seniors, family).
+* Increases trustworthiness of reviews by restricting visibility to your network.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🏡 Property Listing Management
 
-### `npm run eject`
+* Admin dashboard to add/edit/remove properties.
+* Image uploads and property details stored securely.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🔐 Authentication
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* JWT-based secure login for users and admins.
+* Role-based access: Users (view/search), Admins (manage listings).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧱 Tech Stack
 
-## Learn More
+| Layer               | Technology                                  |
+| ------------------- | ------------------------------------------- |
+| Frontend            | React.js, HTML5, CSS3, Tailwind (if used)   |
+| Backend             | Node.js, Express.js                         |
+| Database            | MongoDB                                     |
+| Authentication      | JWT, bcrypt for password hashing            |
+| API Integration     | (Planned) OpenAI API / Zillow API           |
+| Social Review Layer | (Planned) Custom user network logic         |
+| Deployment          | Localhost / LAN, planned for Render/Netlify |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 Project Structure (Simplified)
 
-### Code Splitting
+```
+real-estate/
+├── client/              # React frontend
+│   ├── components/
+│   ├── pages/
+│   └── App.js
+├── server/              # Express backend
+│   ├── routes/
+│   ├── controllers/
+│   └── models/
+├── .env
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🧠 NLP Example (Planned Integration)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**User Query:** "Show me 3BHK flats in Bhopal under ₹50L"
 
-### Making a Progressive Web App
+**Parsed Object:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```json
+{
+  "location": "Bhopal",
+  "bhk": 3,
+  "price_max": 5000000
+}
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📸 Screenshots
 
-### Deployment
+*(Add screenshots of UI, search filters, results page)*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🧪 How to Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+# Backend
+cd server
+npm install
+npm start
+
+# Frontend
+cd client
+npm install
+npm start
+```
+
+Visit: `http://localhost:3000`
+
+---
+
+## 📌 Future Enhancements
+
+* OpenAI-powered assistant for user query parsing.
+* Review visibility based on user's social network.
+* Property recommendations based on past searches.
+* Map-based property view.
+
+---
+
+## 👨‍💻 Contributions
+
+This project was collaboratively developed. My key contributions:
+
+* Full frontend design and dynamic filter integration.
+* Backend APIs and MongoDB schema design.
+* Integration planning for AI-powered search.
+
+AI/NLP chatbot module was contributed by team member \[Name].
+
+---
+
+## 📬 Contact
+
+Feel free to reach out for collaboration or discussion.
