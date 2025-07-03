@@ -88,11 +88,6 @@ real-estate/
 
 ---
 
-## 📸 Screenshots
-
-*(Add screenshots of UI, search filters, results page)*
-
----
 
 ## 🧪 How to Run Locally
 
